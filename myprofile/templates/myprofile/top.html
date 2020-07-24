@@ -1,0 +1,17 @@
+{% extends 'myprofile/base.html' %}
+
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+  <h1>{{ name }}についての概要</h1>
+  <p>Djangoのテストページになっています。</p>
+
+  <h2>学習内容：基本的なHTTPリクエストの応答</h2>
+  <ul>
+    <li>ブラウザがサーバーにHTTPリクエスト</li>
+    <li>サーバーがDjangoフレームワークにリクエストを届ける</li>
+    <li>URLディスパッチャ：リクエストに記された定義（URL）をurls:pyから検索</li>
+    <li>検索にマッチした処理が呼び出され、ビューがＨＴＴＰリクエストに対しHTTPレスポンスを作成</li>
+    <li>作成されたHTTPレスポンスをサーバーに返却</li>
+  </ul>
+{% endblock %}
